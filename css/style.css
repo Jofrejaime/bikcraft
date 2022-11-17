@@ -8,6 +8,7 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+
 }
 
 a {
@@ -30,11 +31,55 @@ a {
   margin: 0 auto;
 }
 
-.header-menu {
-  display: flex;
-  gap: 1.25rem;
+.header-menu{
+display: flex;
+gap: 2.50rem;
+flex-wrap: wrap;
+}
+
+.header-menu a{
+  color: #ffffff;
+  padding: 1rem 0;
   display: inline-block;
-  padding: 1.25rem 0;
-  line-height: 2rem;
   font-size: 1.15rem;
+  position: relative;
+}
+.header-menu a::after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  margin-top: 4px;
+  transition: .3s;
+  position: absolute;
+}
+.header-menu a:hover::after{
+width: 100%;
+}
+@media (max-width: 800px){
+  .header-menu a{
+    background-color:  #111111;
+    padding: 12px 0;
+    border-radius:  4px;
+  }
+  .header-menu a::after{
+    display: none;
+  }
+  .header-menu{
+    gap: 1.25rem;
+  }
+  .header-menu a:hover{
+background-color: #2e2e2e;
+  }
+}
+@media (max-width: 600px){
+  .header-menu{
+    gap: 12px;
+  }
+  .header-menu a{
+    padding: 8px 12px ;
+    font-size: 14px;
+  }
+
 }
