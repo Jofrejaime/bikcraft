@@ -24,3 +24,6 @@ img {
   width: 100%;
   DISPLAY: BLOCK;
 }
+img[src$="jpg"]{
+border-radius: 4px;
+}
