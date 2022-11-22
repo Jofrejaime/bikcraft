@@ -2,6 +2,7 @@
 .introducao-bg {
   background-color: var(--cor-12);
   box-shadow: inset 0 -120px var(--cor-0);
+  
 }
 
 .introducao {
@@ -16,6 +17,7 @@
 }
 
 .introducao img{
+  width: 100%;
   height: 100%;
   object-fit: cover;
 border-radius: 4px; 
