@@ -20,4 +20,9 @@
 /*Bicicletas*/
 
 @import "./bicicletas/bicicletas-lista.css";
+
+@import "./bicicletas/bicicletas.css";
 /*TECNOLOGIA*/
+
+/*Termos e condiçoes*/
+@import "./termos/termos.css";
